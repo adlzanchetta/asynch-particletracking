@@ -1,0 +1,28 @@
+﻿    {"asynch_parttrack_conf":{
+            "particles":{
+                "initial_distribution":{
+                    "method":"all_equal",
+                    "number_particles":4
+                },
+                "rainfall_distribution":{
+                    "method":"volume_proportional",
+                    "volume_per_parts":144000
+                }
+            },
+            "watershed":{
+                "outlet_link_id":522792,
+                "rvr_file_path":"~/asynch_particleTracking/example/case02/asynch_inputs/case02.rvr",
+                "prm_file_path":"~/asynch_particleTracking/example/case02/asynch_inputs/case02.prm"
+            },
+            "simulation":{
+                "hdf5_file_path":"~/asynch_particleTracking/example/case02/asynch_outputs/case02_1483228800.h5",
+                "particle_track_file_path":"~/asynch_particleTracking/example/case02/asynch_particles/case02.p"
+            },
+            "plotting":{
+                "y_axis_limit":65,
+                "graph_title":"Cedar River at Osage, Iowa - USA",
+                "png_file_path":"~/asynch_particleTracking/example/case02/asynch_particles/case02.png"
+            },
+			"description":"Example simulation for the upper Cedar River, near Osage (Iowa - US)."
+        }
+    }
