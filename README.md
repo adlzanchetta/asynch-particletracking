@@ -62,7 +62,7 @@ in which <CONFIG_FILE.json> must be replaced by the path of a JSON file with the
                 "initial_distribution":{
                     "method":<"all_equal"|"volume_proportional"|"none">,
                     "number_particles":<number-of-particles|"none">,
-					"volume_per_parts":<volume-per-particle|"none">
+                    "volume_per_parts":<volume-per-particle|"none">
                 },
                 "rainfall_distribution":{
                     "method":<"volume_proportional"|"none">,
@@ -83,7 +83,7 @@ in which <CONFIG_FILE.json> must be replaced by the path of a JSON file with the
                 "graph_title":"<title-of-graph>",
                 "png_file_path":"<path-for-png-file>"
             },
-			"description":"<free-text-describing-experiment>"
+            "description":"<free-text-describing-experiment>"
         }
     }
 
@@ -114,7 +114,7 @@ An example, as provided in `examples/case02`:
                 "graph_title":"Cedar River at Osage, Iowa - USA",
                 "png_file_path":"~/asynch_particleTracking/example/case02/asynch_particles/case02.png"
             },
-			"description":"Example simulation for the upper Cedar River, near Osage (Iowa - US)."
+            "description":"Example simulation for the upper Cedar River, near Osage (Iowa - US)."
         }
     }
 
