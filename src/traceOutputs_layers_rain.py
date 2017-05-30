@@ -106,8 +106,17 @@ def read_config_and_perform_traking(config_json_fpath):
         print("File '{0}' does not exist.".format(config_json_fpath))
         return
 
-    # read file
+    # read file and basic check
+    print("Reading file '{0}'.".format(config_json_fpath))
     json_config_file = ConfigFile(config_json_fpath)
+    if json_config_file.check_consistancy():
+        print("CHECK SUCCESS")
+    else:
+        print("CHECK FAILED")
+        return
+
+    # setting vars
+
     ref_h5_fpath = json_config_file.get_first_h5_file_path()
     rvr_fpath = json_config_file.get_rvr_file_path()
     prm_fpath = json_config_file.get_prm_file_path()
@@ -117,9 +126,11 @@ def read_config_and_perform_traking(config_json_fpath):
     all_part = None
     vol_part = None
 
+
     # call function
-    perform_tracking(ref_h5_fpath, rvr_fpath, prm_fpath, outlet_linkid, hydrograph_fpath, max_part=max_part,
-                     all_part=all_part, vol_part=vol_part)
+    print("Performing particle tracking...")
+    # perform_tracking(ref_h5_fpath, rvr_fpath, prm_fpath, outlet_linkid, hydrograph_fpath, max_part=max_part,
+    #                  all_part=all_part, vol_part=vol_part)
 
 
 def perform_tracking(ref_h5_fpath, rvr_fpath, prm_fpath, outlet_linkid, hydrograph_fpath, max_part=None, all_part=None,

@@ -1,0 +1,30 @@
+{"asynch_parttrack_conf":{
+		"description":"Wolf Creek - Cedar Basin - Iowa, 2 inches in 24 hours rainfall, 4 days simulation time",
+		"particles":{
+			"initial_distribution":{
+				"method":"all_equal",
+				"number_particles":4
+			},
+			"rainfall_distribution":{
+				"method":"none"
+			}
+		},
+		"watershed":{
+			"outlet_link_id":309414,
+			"rvr_file_path":"~/asynch_particleTracking/example/case01/asynch_inputs/wolfCreek.rvr",
+			"prm_file_path":"~/asynch_particleTracking/example/case01/asynch_inputs/wolfCreek.prm"
+		},
+		"simulation":{
+			"hdf5_file_path":"~/asynch_particleTracking/example/case01/asynch_outputs/wolfCreek02in24hr_1483228800.h5",
+			"particle_track_file_path":"~/asynch_particleTracking/example/case01/asynch_particles/"
+		},
+		"plotting":{
+			"y_axis_limit":65,
+			"graph_title":"Wolf Creek, 2 inches in 1 day",
+			"png_widthfunction_file_path":"~/asynch_particleTracking/example/case01/asynch_particles/01_widthfunc.png",
+			"png_hydrograph_file_path":"~/asynch_particleTracking/example/case01/asynch_particles/02_hydrograph.png",
+			"png_peakpiechart_file_path":"~/asynch_particleTracking/example/case01/asynch_particles/03_peakpiechart.png"
+		},
+		"version_parttrack":"1.0"
+	}
+}
